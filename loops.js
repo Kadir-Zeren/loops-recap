@@ -37,10 +37,17 @@
 // }
 
 // console.log(`Noutunu: ${not}`);
-let not;
+// let not;
 
-do {
-  not = prompt(`lutfen 0-100 arasinda bir not giriniz:`);
-} while (not < 0 || not > 100);
+// do {
+//   not = prompt(`lutfen 0-100 arasinda bir not giriniz:`);
+// } while (not < 0 || not > 100);
 
-console.log(`Notunuz: ${not}`);
+// console.log(`Notunuz: ${not}`);
+
+let not = prompt(`lutfen 0-100 arasinda bir not giriniz:`);
+for (; not < 0 || not > 100; ) {
+  console.log(`Not 0'dan kucuk veya 100'den buyuk olamaz`);
+  not = prompt(`lutfen 0-100 arasinda bir not giriniz :`);
+}
+console.log("Notunu:", not);
